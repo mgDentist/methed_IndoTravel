@@ -1,7 +1,6 @@
-export const timerMainPage = () => {
-    const heroTimer = document.querySelector('.hero__timer.timer');
-    const heroText = document.querySelector('.hero__text');
-    const deadline = heroTimer.getAttribute('data-timer-deadline');
+export const timerMainPage = (timerSelector, timerTextSelector, deadline) => {
+    const heroTimer = document.querySelector(timerSelector);
+    const heroText = document.querySelector(timerTextSelector);
 
     const timerDaysCount = heroTimer.querySelector('.timer__count_days');
     const timerDaysUnits = heroTimer.querySelector('.timer__units_days');
